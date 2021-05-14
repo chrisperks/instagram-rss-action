@@ -15,7 +15,7 @@ async function feed() {
       title: feedTitle,
       description: `Instagram posts for ${handles.join(", ")}.`,
     };
-    const client = new Instagram({ username });
+    const client = new Instagram({ username: '', password: '' });
 
     let allPosts = [];
     for (const handle of handles) {
